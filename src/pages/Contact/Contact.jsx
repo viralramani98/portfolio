@@ -38,7 +38,7 @@ const Contact = () => {
             {/* Phone */}
             <div className="flex items-center gap-4 text-gray-800">
               <FaPhone className="text-blue-600 text-2xl" />
-              <span className="text-lg font-medium">+91 93130 94624</span>
+              <span className="text-lg font-medium">+91 93130 *****</span>
             </div>
 
             {/* Location */}
@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
           <div className="mt-8">
             <a
-              href="Viral Ramani Resume.pdf" // 👈 Make sure to place resume.pdf in your public folder
+              href="viral ramani public Resume.png"
               download
               className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
             >

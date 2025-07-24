@@ -20,15 +20,12 @@ const About = () => {
 
         {/* Paragraph Section */}
         <p className="text-gray-700 mb-10 leading-relaxed" data-aos="fade-up">
-          I'm a passionate and hardworking web developer currently pursuing my
-          Bachelor of Computer Applications (BCA). Though I'm a fresher with no
-          formal projects or internships yet, I’ve built hands-on skills in
-          front-end and back-end development through practice and self-learning.
-          <br />
-          <br />I believe in continuous learning and self-improvement. Whether
-          it's developing a student management system with PHP & MySQL, or
-          building sleek UIs with React and Tailwind, I'm always focused on
-          clean code and performance.
+          I'm a web developer currently pursuing a Bachelor of Computer
+          Applications (BCA). While I don’t have formal project or internship
+          experience yet, I've been building my skills through personal practice
+          and small projects. I'm passionate about creating clean, responsive
+          websites using tools like HTML, CSS, JavaScript, Tailwind CSS, and
+          React. I'm always eager to learn and grow as a developer.
         </p>
 
         {/* Grid Cards */}

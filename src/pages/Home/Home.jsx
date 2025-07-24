@@ -1,22 +1,36 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
+import PrimaryButton from "../../Components/Buttons/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const goToAbout = () => {
+    navigate("/About");
+  };
+  const goToProject = () => {
+    navigate("/Projects");
+  };
   return (
-    <div className="container mx-auto">
-      <Header />
+    <div className="min-h-screen">
+      {/* Sticky Header */}
+      <div className="sticky top-0 z-50 bg-white shadow">
+        <Header />
+      </div>
 
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row items-center justify-center gap-12 px-4 sm:px-6 lg:px-12 py-20 max-w-screen-xl mx-auto">
+      <section className="flex flex-col lg:flex-row items-center justify-center gap-12 px-4 sm:px-6 lg:px-12 pt-20 min-h-screen max-w-screen-xl mx-auto">
+        {/* Profile Image */}
         <div className="flex-shrink-0 overflow-hidden rounded-2xl shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-blue-400 hover:ring-opacity-50">
           <img
             src="IMG-20240119-WA0440.jpg"
             alt="Viral Ramani"
-            className="rounded-2xl shadow-xl w-48 sm:w-60 md:w-72 lg:w-80 xl:w-96 transition duration-300 hover:scale-105 hover:shadow-2xl hover:rotate-1"
+            className="rounded-2xl shadow-xl w-40 sm:w-48 md:w-56 lg:w-72 xl:w-80 transition duration-300 hover:scale-105 hover:shadow-2xl hover:rotate-1"
           />
         </div>
 
-        <div className="text-center lg:text-left animate-fade-in-down duration-1000 max-w-xl">
+        {/* Text Content */}
+        <div className="text-center lg:text-left animate-fade-in-down duration-1000 max-w-xl px-2">
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold leading-tight mb-6 transition-transform hover:scale-105">
             CREATIVE WEB <br />
             <span className="text-black bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -34,18 +48,8 @@ const Home = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a
-              href="/About"
-              className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
-            >
-              About Me
-            </a>
-            <a
-              href="/Projects"
-              className="border border-blue-600 text-blue-600 px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300"
-            >
-              View Projects
-            </a>
+            <PrimaryButton text="About Me" onclickFn={goToAbout} />
+            <PrimaryButton text="View Projects" onclickFn={goToProject} />
           </div>
 
           <p className="mt-6 text-sm text-gray-400 animate-pulse">
@@ -53,35 +57,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-
-      {/* Skills Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-10 px-4">
-        <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-center text-xl sm:text-2xl lg:text-3xl font-bold mb-6 tracking-wide">
-            🚀 Skills & Tools
-          </h2>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-sm sm:text-base font-medium">
-            {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "ReactJS",
-              "Tailwind CSS",
-              "Bootstrap",
-              "Git",
-              "Netlify",
-              "Vercel",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

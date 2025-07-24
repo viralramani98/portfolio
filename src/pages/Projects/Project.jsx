@@ -7,28 +7,47 @@ const Project = () => {
       name: "Furniro",
       image: "Furniro web image.png",
       description:
-        "A task management app with editing and completion functionality.",
+        "Furniro – Discover elegant and modern furniture collections that blend comfort with style for your perfect space.",
       tech: ["HTML", "Bootstrap"],
       demoLink: "https://furniro-viral.netlify.app/",
-      githubLink: "https://app.netlify.com/projects/furniro-viral/overview",
+      githubLink: "https://github.com/viralramani98/bootstrap",
     },
     {
       name: "Gaming Web",
       image: "gaming web.png",
-      description: "Live weather app using OpenWeatherMap API.",
+      description:
+        "Redefining the future of gaming—step into the metagame, embrace the play economy, and explore the next-gen digital world.",
       tech: ["HTML", "CSS", "JS"],
       demoLink: "https://gaming-web-viral.netlify.app/",
       githubLink:
-        "https://app.netlify.com/projects/gaming-web-viral/configuration/general",
+        "https://github.com/viralramani98/amazing-web-with-HTML-CSS-and-JavaScript",
     },
     {
       name: "Netflix",
       image: "Netflix clone.png",
-      description: "A full CRUD system to manage students using PHP and MySQL.",
+      description:
+        "A responsive Netflix homepage clone built with modern UI components, showcasing clean layout, layered backgrounds, and interactive Search-bar.",
       tech: ["HTML", "Bootstrap"],
       demoLink: "https://clone-no1.netlify.app/",
-      githubLink:
-        "https://app.netlify.com/projects/clone-no1/configuration/general",
+      githubLink: "https://github.com/viralramani98/netflix",
+    },
+    {
+      name: "Animal Web",
+      image: "Animal website.png",
+      description:
+        "A visually rich animal-themed design slider built with smooth transitions, responsive layout, and an engaging hero section showcasing wildlife.",
+      tech: ["HTML", "Bootstrap", "Javascript"],
+      demoLink: "https://animal-websitefromviral.netlify.app/",
+      githubLink: "https://github.com/viralramani98/second-amazing-web",
+    },
+    {
+      name: "Tic Tac Toe Game",
+      image: "tic tac toe.png",
+      description:
+        "Interactive Tic Tac Toe game built using React with time travel feature, state tracking, and dynamic UI updates.",
+      tech: ["HTML", "Bootstrap", "Javascript", "React"],
+      demoLink: "https://tic-tac-toe-chi-bice.vercel.app/",
+      githubLink: "https://github.com/viralramani98/Tic-Tac-toe",
     },
   ];
 
@@ -80,7 +99,7 @@ const Project = () => {
                     rel="noopener noreferrer"
                     className="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition"
                   >
-                    Netlify
+                    Git Hub
                   </a>
                 </div>
               </div>
