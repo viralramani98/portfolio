@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Project from "./pages/Projects/Project";
+import Contact from "./pages/Contact/Contact";
 
 export const Menus = [
   {
@@ -18,6 +19,11 @@ export const Menus = [
     path: "/Projects",
     title: "Projects",
     element: <Project />,
+  },
+  {
+    path: "/Contact", 
+    title: "Contact",
+    element: <Contact />,
   },
 ];
 
